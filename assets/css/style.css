@@ -408,28 +408,25 @@ body {
 }
 
 .project1_image {
-    background-image: url('../images/Foodomizer_img_capture.PNG');
+    background-image: url('../images/Ecommerce_img_capture.PNG');
 }
 
 .project2_image {
-    background-image: url('../images/Temple.jpg');
+    background-image: url('../images/DjangoBlog_img_capture.PNG');
 }
 
 .project3_image {
-    background-image: url('../images/Boat.jpg');
+    background-image: url('../images/Foodomizer_img_capture.PNG');
 }
 
 .project4_image {
-    background-image: url('../images/Ice_Mountain.jpg');
+    background-image: url('../images/FlaskTaskMaster_img_capture.PNG');
 }
 
 .project5_image {
-    background-image: url('../images/NewZealand.jpg')
+    background-image: url('../images/PortfolioTemplate_img_capture.PNG')
 }
 
-.project6_image {
-    background-image: url('../images/Goat.jpg')
-}
 
 /* Grid Item Content */
 
