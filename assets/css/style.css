@@ -168,27 +168,21 @@ body {
     -webkit-transform: scale(1.1);
 }
 
-.sidebar .social_media {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
+.social_media {
     display: flex;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    justify-content: center;
 }
 
-.sidebar .social_media a {
+.social_media a {
     display: block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-    margin: 0 0.5em;
     color: var(--clr-light);
     transition: 0.3s;
+    padding: 0.5em;
 }
 
-.sidebar .social_media a:hover {
+.social_media a:hover {
     color: var(--clr-accent);
     transition: 0.3s;
 }
@@ -271,6 +265,7 @@ body {
     padding: 0.8em;
     border-radius: 1em;
     background-color: var(--clr-accent);
+    width: 33%;
 }
 
 .service__title {
@@ -279,8 +274,9 @@ body {
 }
 
 .service__discription {
-    font-size: var(--fs-body);
+    line-height: 1.5em;
 }
+
 
 /*Responsive Intro/Services Section*/
 
@@ -298,6 +294,7 @@ body {
 
     .service {
         margin-bottom: 1em;
+        width: 100%
     }
 
     .service + .service {
@@ -306,7 +303,7 @@ body {
 }
 
 /* My Projects/Portfolio */
-.my-work .project__container {
+.project__container {
     max-width: 1335px;
     margin: 0;
     margin-bottom: 4em;
@@ -540,7 +537,7 @@ body {
 /* About Me */
 
 .about__container {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     margin-top: 1em;
     width: 100%;
 }
@@ -566,8 +563,10 @@ body {
 }
 
 .about__image {
-    height: 15em;
-    width: 10em;
+    height: 20em;
+    width: 15em;
+    border-radius: 1em;
+    margin-top: 1.5em;
 }
 
 .about-right {
@@ -596,7 +595,8 @@ body {
     color: var(--clr-dark);
     font-size: var(--fs-body);
     overflow-y: scroll;
-    max-height: 10em;
+    max-height: 20em;
+    line-height: 1.5em;
 }
 
 .p_about_body::-webkit-scrollbar {
@@ -625,10 +625,13 @@ body {
 
 .my-resume {
     margin-bottom: 4em;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
 .button.resume {
-    position: relative;
     padding: 1em 1em;
     background: var(--clr-accent);
     color: var(--clr-dark);
@@ -641,7 +644,6 @@ body {
     border-radius: 1em;
     border: none;
     text-align: center;
-    margin-left: 34%;
 }
 
 .button.resume:hover {
@@ -659,7 +661,7 @@ body {
 .container__contact {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     padding: 1em;
     background-color: var(--clr-light);
@@ -679,7 +681,9 @@ body {
 .contact__left {
     background: url('../images/Sunset_Backdrop.jpg') no-repeat center;
     background-size: cover;
-    height: 100%;
+    height: 80%;
+    margin-top: -1em;
+    border-radius: 1em;
 }
 
 .contact__right {
@@ -691,6 +695,12 @@ body {
     margin-bottom: 0.5em;
     color: var(--clr-light);
     font-size: var(--fs-h1);
+}
+
+.contact-title-alt {
+    color: var(--clr-dark);
+    text-align: center;
+    margin-top: 3em;
 }
 
 .field {
@@ -744,8 +754,8 @@ textarea {
     .contact-box {
         grid-template-columns: 1fr;
     }
-    .left {
-        height: 20em;
+    .contact__left {
+        display: none;
     }
 }
 
