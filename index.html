@@ -409,10 +409,10 @@
             </div> <!--End of left content-->
             <div class="contact__right">
                 <form action="https://formsubmit.co/tannerrigg@gmail.com" method="Post">
-                  <input type="text" class="field" placeholder="Your Name" required>
+                  <input type="text" name="name" class="field" placeholder="Your Name" required>
                   <input type="email" name="email" class="field" placeholder="Your Email Address" required>
-                  <textarea placeholder="Message" class="field"></textarea>
-                  <button type="submit" class="button contact" href="#modal0">
+                  <textarea placeholder="Message" name="message" class="field"></textarea>
+                  <button type="submit" class="button contact">
                       Send
                   </button>
                 </form>
@@ -420,28 +420,6 @@
           </div> <!--End of contact-box-->
         </div> <!--End of container__contact-->
       </section> <!--End of Contact Section-->
-
-      <!--Thank you modal-->
-
-      <div id="modal0" class="popup">
-        <a class="popup__overlay" href="#contact"></a>
-        <div class="popup__wrapper">
-          <div class="modal-content">
-            <div class="modal-header">
-              <a class="popup__close" href="#contact">&times;</a>
-            </div>    
-            <div class="modal-body">
-                <h2 class="contact-title-alt">
-                  Thank you for your interest in this portfolio.
-                </h2>
-                <br>
-                <h2 class="contact-title-alt">
-                  Your email has been sent to Tanner.
-                </h2>
-            </div>
-          </div> <!--End of Modal Content-->
-        </div> <!--End of popup__wrapper-->
-      </div> <!--End of Modal Thank You-->
 
 
       <!--Project Modals-->
